@@ -15,43 +15,54 @@ The Reservation App performs the logic of searching for the availability of a de
 ## Test Case Descriptions
 
 1. Provided Test Case
+    
     •Test case provided by Campspot.
 
-   Expected Output: "Comfy Cabin", "Rickety Cabin", "Cabin in the Woods"
+    Expected Output: "Comfy Cabin", "Rickety Cabin", "Cabin in the Woods"
 
 2. My Test 1
+    
     •Search end date is earlier than search start date.
 
-   Expected Output: "The search Start Date must be earlier than the End Date."
+    Expected Output: "The search Start Date must be earlier than the End Date."
 
 3. My Test 2
+    
     •Searched reservation dates conflict with all existing reservation dates.
 
-   Expected Output: "There are no campsites available for the searched dates."
+    Expected Output: "There are no campsites available for the searched dates."
 
 4. My Test 3
+    
     •Campsite 1 contains a single day gap on both sides of the searched reservation.
+    
     •Campsite 2 contains a two day gap on both sides of the searched reservation.
 
-   Expected Output: "Comfy Cabin"
+    Expected Output: "Comfy Cabin"
 
 5. My Test 4
+
     •Searched reservation exists in a separate month from existing reservations and has no conflicts.
 
-   Expected Output: "Comfy Cabin", "Cozy Cabin", "Rustic Cabin", "Rickety Cabin", "Cabin in the Woods"
+    Expected Output: "Comfy Cabin", "Cozy Cabin", "Rustic Cabin", "Rickety Cabin", "Cabin in the Woods"
 
 6. My Test 5
+    
     •Campsite 1 contains a single day gap before the searched start date.
+    
     •Campsite 2 contains a single day gap after the searched end date. 
+    
     •Campsite 3 has a reservation that overlaps with the searched reservation.
+    
     •Campsite 4 has no conflicts with the searched reservation.
 
-   Expected Output: "Rickety Cabin"
+    Expected Output: "Rickety Cabin"
 
 7. My Test 6
+    
     •Campsite 1 has a single day gap but the reservation exists in the previous month.
 
-   Expected Output: "There are no campsites available for the searched dates."
+    Expected Output: "There are no campsites available for the searched dates."
 
 ## Reservation Search Logic
 
