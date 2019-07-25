@@ -61,11 +61,9 @@ export class ReservationService {
     let dayMs = 1000 * 60 * 60 * 24;
     
     if(difference <= dayMs + (dayMs * gapSize) && difference > dayMs){
-        console.log(false);
         return false;
     }
     else{
-        console.log(true);
         return true;
     }
 
