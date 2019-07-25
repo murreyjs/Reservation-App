@@ -1,0 +1,61 @@
+<div class="make-reservation-container">
+
+  <div class="make-res-title">
+    Select a Test Case
+  </div>
+
+  <div class="test-cases-container">
+
+    <button class="test-case" (click)="retrieveTestCase('test-case')">
+      Provided Test Case
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-1')">
+      My Test 1
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-2')">
+      My Test 2
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-3')">
+      My Test 3
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-4')">
+      My Test 4
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-5')">
+      My Test 5
+    </button>
+
+    <button class="test-case" (click)="retrieveTestCase('my-test-6')">
+      My Test 6
+    </button>
+
+  </div>
+
+  <div class="output-container">
+
+    <div *ngIf="!errMessage && availableCampsites.length > 0" class="available-sites">
+
+      Available Campsites:
+
+      <div *ngFor="let camp of availableCampsites" class="campsite">
+        
+        {{camp.name}}
+
+      </div>
+
+    </div>
+
+    <div *ngIf="errMessage" class="error-message">
+
+      {{errMessage}}
+
+    </div>
+
+  </div>
+
+</div>

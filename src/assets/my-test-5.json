@@ -1,0 +1,33 @@
+{
+  "search": {
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-13"
+  },
+  "campsites": [
+    {
+      "id": 1,
+      "name": "Cozy Cabin"
+    },
+    {
+      "id": 2,
+      "name": "Comfy Cabin"
+    },
+    {
+      "id": 3,
+      "name": "Rustic Cabin"
+    },
+    {
+      "id": 4,
+      "name": "Rickety Cabin"
+    }
+  ],
+  "reservations": [
+    {"campsiteId": 1, "startDate": "2018-06-05", "endDate": "2018-06-08"},
+    {"campsiteId": 1, "startDate": "2018-06-17", "endDate": "2018-06-20"},
+    {"campsiteId": 2, "startDate": "2018-06-01", "endDate": "2018-06-05"},
+    {"campsiteId": 2, "startDate": "2018-06-15", "endDate": "2018-06-17"},
+    {"campsiteId": 3, "startDate": "2018-06-11", "endDate": "2018-06-15"},
+    {"campsiteId": 3, "startDate": "2018-06-08", "endDate": "2018-06-09"},
+    {"campsiteId": 4, "startDate": "2018-06-01", "endDate": "2018-06-05"}
+  ]
+}

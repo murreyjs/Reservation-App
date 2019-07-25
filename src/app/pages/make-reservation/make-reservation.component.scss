@@ -1,0 +1,31 @@
+.make-res-title {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.test-cases-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+    .test-case {
+        font-weight: bold;
+        font-size: 12px;
+        background-color: #4eb5f1;
+        border-radius: 3em;
+        display: inline-block;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+.output-container{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
